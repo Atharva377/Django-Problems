@@ -25,7 +25,7 @@ on post_save signal for Order:
 
 Create Order:
 order = create Order(customer="John Doe", total_amount=100)
-# This triggers the post_save signal and calls send_order_confirmation_email
+This triggers the post_save signal and calls send_order_confirmation_email
 
 Explanation:
 1.	Order Creation: When an Order is created using create Order(...), the post_save signal is triggered immediately after saving the order.
@@ -55,7 +55,7 @@ on post_save signal for Order:
 
 Create Order:
 order = create Order(customer="John Doe", total_amount=100)
-# This triggers the post_save signal and calls log_order_creation
+This triggers the post_save signal and calls log_order_creation
 
 Explanation:
 1.	Order Creation: When you create an Order, the post_save signal is triggered immediately after the order is saved.
