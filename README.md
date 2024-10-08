@@ -113,7 +113,6 @@ class Rectangle:
         self.width = width
 
     def __iter__(self):
-        # This method allows the instance to be iterable
         yield {'length': self.length}
         yield {'width': self.width}
 
